@@ -9,49 +9,28 @@ import { InitialDataResolver } from 'app/app.resolvers';
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 export const appRoutes: Route[] = [
     // Redirect empty path to '/dashboards/project'
-    { path: '', pathMatch: 'full', redirectTo: 'dashboards/project' },
+    { path: '', pathMatch: 'full', redirectTo: '' },
 
     // Admin routes
     {
         path: '',
-        canMatch: [AuthGuard],
+        // canMatch: [AuthGuard],
         component: LayoutComponent,
         resolve: {
             initialData: InitialDataResolver,
         },
         children: [
-            // Dashboards
+            // Dash
             {
-                path: 'dashboards',
+                path: '',
                 children: [
                     {
-                        path: 'project',
+                        path: '',
                         loadChildren: () =>
-                            import(
-                                'app/modules/admin/dashboards/project/project.module'
-                            ).then((m) => m.ProjectModule),
+                            import('app/pages/pages.module').then(
+                                (m) => m.PagesModule
+                            ),
                     },
-                    // {
-                    //     path: 'analytics',
-                    //     loadChildren: () =>
-                    //         import(
-                    //             'app/modules/admin/dashboards/analytics/analytics.module'
-                    //         ).then((m) => m.AnalyticsModule),
-                    // },
-                    // {
-                    //     path: 'finance',
-                    //     loadChildren: () =>
-                    //         import(
-                    //             'app/modules/admin/dashboards/finance/finance.module'
-                    //         ).then((m) => m.FinanceModule),
-                    // },
-                    // {
-                    //     path: 'crypto',
-                    //     loadChildren: () =>
-                    //         import(
-                    //             'app/modules/admin/dashboards/crypto/crypto.module'
-                    //         ).then((m) => m.CryptoModule),
-                    // },
                 ],
             },
 
