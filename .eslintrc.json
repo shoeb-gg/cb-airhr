@@ -6,18 +6,12 @@
     "parserOptions": {
         "ecmaVersion": 2018
     },
-    "ignorePatterns": [
-        "projects/**/*"
-    ],
+    "ignorePatterns": ["projects/**/*"],
     "overrides": [
         {
-            "files": [
-                "*.ts"
-            ],
+            "files": ["*.ts"],
             "parserOptions": {
-                "project": [
-                    "tsconfig.json"
-                ],
+                "project": ["tsconfig.json"],
                 "createDefaultProgram": true
             },
             "extends": [
@@ -43,52 +37,29 @@
                     }
                 ],
                 "@typescript-eslint/dot-notation": "off",
-                "@typescript-eslint/explicit-function-return-type": "error",
                 "@typescript-eslint/explicit-member-accessibility": [
                     "off",
                     {
                         "accessibility": "explicit"
                     }
                 ],
+                "@typescript-eslint/member-ordering": "off",
                 "@typescript-eslint/no-inferrable-types": "off",
-                "arrow-parens": [
-                    "error",
-                    "as-needed",
-                    {
-                        "requireForBlockBody": true
-                    }
-                ],
-                "brace-style": [
-                    "off",
-                    "off"
-                ],
+                "@typescript-eslint/naming-convention": "off",
+                "brace-style": ["off", "off"],
                 "import/order": "off",
-                "max-len": [
-                    "error",
-                    {
-                        "ignorePattern": "^import |^export | implements",
-                        "code": 180
-                    }
-                ],
                 "no-underscore-dangle": "off",
                 "object-shorthand": "off",
-                "quote-props": [
-                    "error",
-                    "consistent"
-                ],
-                "quotes": [
-                    "error",
-                    "single"
-                ]
+                "quote-props": ["error", "consistent"],
+                "quotes": ["error", "single"],
+                "eqeqeq": "off",
+                "@typescript-eslint/no-unused-expressions": "off",
+                "max-len": "off"
             }
         },
         {
-            "files": [
-                "*.html"
-            ],
-            "extends": [
-                "plugin:@angular-eslint/template/recommended"
-            ],
+            "files": ["*.html"],
+            "extends": ["plugin:@angular-eslint/template/recommended"],
             "rules": {}
         }
     ]
