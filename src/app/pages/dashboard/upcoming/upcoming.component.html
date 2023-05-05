@@ -1,0 +1,63 @@
+<div class="flex flex-col flex-auto shadow rounded-2xl overflow-hidden space-y-2 mt-3">
+    <div class="flex justify-between mt-0.5 p-4 pb-0">
+        <div class="text-xl font-semibold tracking-tight leading-6">Upcoming Schedule</div>
+
+        <mat-form-field class="flex items-center">
+            <mat-select value="Today">
+                <mat-option selected value="Today">Today</mat-option>
+                <mat-option value="Yesterday">Yesterday</mat-option>
+                <mat-option value="Tomorrow">Tomorrow</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <div class="p-4 pr-0 pt-0">
+        <div class="py-1">Priority</div>
+        <div class="flex justify-between cust-bg p-4 mr-4 shadow rounded-md overflow-hidden h-18">
+            <div>
+                <div class="text-lg font-medium tracking-tight leading-6">
+                    Meeting HR Department
+                </div>
+                <div class="text-sm leading-5">49 minutes ago</div>
+            </div>
+
+            <div class="space-x-2">
+                <mat-icon class="cursor-pointer">more_horiz</mat-icon>
+            </div>
+        </div>
+
+        <div class="overflow-y-scroll pt-2 mt-2 max-h-44 pr-2">
+            <div class="pb-1">Other</div>
+            <div class="w-full flex flex-col space-y-2 mb-2">
+                <div
+                    class="w-full flex justify-between cust-bg p-4 shadow rounded-md overflow-hidden min-h-18"
+                >
+                    <div>
+                        <div class="text-lg font-medium tracking-tight leading-6">
+                            Meeting HR Department
+                        </div>
+                        <div class="text-sm leading-5">49 minutes ago</div>
+                    </div>
+
+                    <div class="space-x-2">
+                        <mat-icon class="cursor-pointer">more_horiz</mat-icon>
+                    </div>
+                </div>
+                <div
+                    class="w-full flex justify-between cust-bg p-4 shadow rounded-md overflow-hidden min-h-18"
+                >
+                    <div>
+                        <div class="text-lg font-medium tracking-tight leading-6">
+                            Meeting HR Department
+                        </div>
+                        <div class="text-sm leading-5">49 minutes ago</div>
+                    </div>
+
+                    <div class="space-x-2">
+                        <mat-icon class="cursor-pointer">more_horiz</mat-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

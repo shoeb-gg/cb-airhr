@@ -15,12 +15,16 @@ layout {
 
     /* Base styles for components that load as a route */
     router-outlet {
-
         + * {
             position: relative;
             display: flex;
+            flex-direction: column;
             flex: 1 1 auto;
             width: 100%;
         }
+    }
+
+    .cust-bg {
+        background-color: #fafafa; //Sidebar BG
     }
 }
