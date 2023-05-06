@@ -7,14 +7,13 @@ import { MatSelectModule } from '@angular/material/select';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
-import { BasicCardComponent } from './basic-card/basic-card.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { AnnouncementComponent } from './announcement/announcement.component';
-import { RecentComponent } from './recent/recent.component';
-import { UpcomingComponent } from './upcoming/upcoming.component';
+
+import { SharedModule } from 'app/shared/shared.module';
 
 @NgModule({
-    declarations: [DashboardComponent, BasicCardComponent, AnnouncementComponent, RecentComponent, UpcomingComponent],
+    declarations: [DashboardComponent, AnnouncementComponent],
     imports: [
         CommonModule,
         DashboardRoutingModule,
@@ -22,6 +21,7 @@ import { UpcomingComponent } from './upcoming/upcoming.component';
         MatIconModule,
         NgApexchartsModule,
         MatSelectModule,
+        SharedModule,
     ],
 })
 export class DashboardModule {}

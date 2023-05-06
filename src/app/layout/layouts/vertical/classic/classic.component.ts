@@ -47,6 +47,7 @@ export class ClassicLayoutComponent implements OnInit, OnDestroy {
                             title: 'Recruitment',
                             type: 'collapsable',
                             icon: 'mat_solid:person_search',
+                            link: 'recruitment',
                             children: [
                                 {
                                     id: 'main.recruitment.jobPost',
