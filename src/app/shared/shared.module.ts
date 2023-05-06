@@ -1,19 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { MatIconModule } from '@angular/material/icon';
+import { MatSelectModule } from '@angular/material/select';
+
+import { RecentComponent } from './recent/recent.component';
+import { UpcomingComponent } from './upcoming/upcoming.component';
+import { BasicCardComponent } from './basic-card/basic-card.component';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        FormsModule,
-        ReactiveFormsModule
-    ],
+    declarations: [RecentComponent, UpcomingComponent, BasicCardComponent],
+    imports: [CommonModule, MatIconModule, MatSelectModule],
     exports: [
         CommonModule,
-        FormsModule,
-        ReactiveFormsModule
-    ]
+        RecentComponent,
+        UpcomingComponent,
+        BasicCardComponent,
+    ],
 })
-export class SharedModule
-{
-}
+export class SharedModule {}
