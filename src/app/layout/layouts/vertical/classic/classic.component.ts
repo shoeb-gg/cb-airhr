@@ -54,6 +54,7 @@ export class ClassicLayoutComponent implements OnInit, OnDestroy {
                                     title: 'Job Post',
                                     type: 'basic',
                                     icon: 'mat_solid:work',
+                                    link: 'recruitment/job-post',
                                 },
                                 {
                                     id: 'main.recruitment.onboarding',
