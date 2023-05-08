@@ -12,4 +12,9 @@
         .mdc-tab-indicator__content--underline {
         border-color: black;
     }
+
+    .mat-form-field-appearance-outline.mat-focused
+        .mat-form-field-outline-thick {
+        color: #000000;
+    }
 }
