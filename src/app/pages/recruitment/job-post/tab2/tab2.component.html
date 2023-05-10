@@ -1,0 +1,160 @@
+<section class="w-full flex flex-col py-1">
+    <div class="w-full flex space-x-4">
+        <div class="w-1/2">
+            <div class="w-full">
+                <div class="font-semibold p-1">Expertise</div>
+                <mat-form-field class="w-full" appearance="outline">
+                    <input type="text" matInput placeholder="Add Keywords" />
+                </mat-form-field>
+            </div>
+
+            <div class="w-full">
+                <div class="font-semibold p-1">Educational Qualification</div>
+                <mat-form-field class="w-full" appearance="outline">
+                    <input type="text" matInput placeholder="Add Keywords" />
+                </mat-form-field>
+            </div>
+
+            <div class="w-full">
+                <div class="font-semibold p-1">Other Skills</div>
+                <mat-form-field class="w-full" appearance="outline">
+                    <input type="text" matInput placeholder="Add Keywords" />
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="w-1/2">
+            <div class="w-full">
+                <div class="font-semibold p-1">Years of Experience</div>
+                <mat-form-field class="w-full" appearance="outline">
+                    <input type="text" matInput placeholder="* Years" />
+                </mat-form-field>
+            </div>
+
+            <div class="w-full">
+                <div class="font-semibold p-1">Software Skilss</div>
+                <mat-form-field class="w-full" appearance="outline">
+                    <input type="text" matInput placeholder="Add Keywords" />
+                </mat-form-field>
+            </div>
+
+            <div class="w-full">
+                <div class="font-semibold p-1">Preferences</div>
+                <mat-form-field class="w-full" appearance="outline">
+                    <input type="text" matInput placeholder="Add Keywords" />
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full flex space-x-4">
+        <div class="w-3/5 flex flex-col">
+            <div class="w-full text-2xl font-semibold pb-2">Set Tonality</div>
+
+            <div class="py-2">
+                <div class="w-full flex flex-col">
+                    <span class="w-full flex justify-between px-2">
+                        <label class="">Professionalism</label>
+                        <label class="example-value-label">30%</label>
+                    </span>
+
+                    <mat-slider>
+                        <input matSliderThumb />
+                    </mat-slider>
+                </div>
+            </div>
+
+            <div class="py-2">
+                <div class="w-full flex flex-col">
+                    <span class="w-full flex justify-between px-2">
+                        <label class="">Friendliness</label>
+                        <label class="example-value-label">20%</label>
+                    </span>
+
+                    <mat-slider>
+                        <input matSliderThumb />
+                    </mat-slider>
+                </div>
+            </div>
+
+            <div class="py-2">
+                <div class="w-full flex flex-col">
+                    <span class="w-full flex justify-between px-2">
+                        <label class="">Soft Skills</label>
+                        <label class="example-value-label">33%</label>
+                    </span>
+
+                    <mat-slider>
+                        <input matSliderThumb />
+                    </mat-slider>
+                </div>
+            </div>
+
+            <div class="py-2">
+                <div class="w-full flex flex-col">
+                    <span class="w-full flex justify-between px-2">
+                        <label class="">Empathy</label>
+                        <label class="example-value-label">38%</label>
+                    </span>
+
+                    <mat-slider>
+                        <input matSliderThumb />
+                    </mat-slider>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-2/5 m-2 mt-20">
+            <div class="w-full flex flex-col flex-auto bg-card shadow rounded-2xl overflow-hidden">
+                <div class="flex items-start justify-between m-6 mb-0">
+                    <div class="text-lg font-medium tracking-tight leading-6 truncate">
+                        Overall Tone
+                    </div>
+                    <div class="ml-2">
+                        <span class="font-medium text-sm text-secondary">30 days</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row lg:items-center mx-6 mt-3">
+                    <div class="text-7xl font-bold tracking-tighter leading-tight">Friendly</div>
+                    <div class="flex lg:flex-col lg:ml-3">
+                        <mat-icon
+                            class="icon-size-5 text-red-500"
+                            [svgIcon]="'heroicons_solid:trending-down'"
+                        ></mat-icon>
+                        <div
+                            class="flex items-center ml-1 lg:ml-0 lg:mt-0.5 text-md leading-none whitespace-nowrap text-secondary"
+                        >
+                            <span class="font-medium text-red-500">+2%</span>
+                            <span class="ml-1">Career Growth</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-auto h-30">
+                    <apx-chart
+                        class="flex-auto w-full h-full"
+                        [chart]="chartConversions.chart"
+                        [colors]="chartConversions.colors"
+                        [series]="chartConversions.series"
+                        [stroke]="chartConversions.stroke"
+                        [tooltip]="chartConversions.tooltip"
+                        [xaxis]="chartConversions.xaxis"
+                        [yaxis]="chartConversions.yaxis"
+                    ></apx-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="space-x-2 mt-10">
+        <button
+            (click)="gotoNextTab()"
+            class="bg-black text-white w-30 py-2 text-sm font-medium rounded"
+        >
+            Continue
+        </button>
+        <button class="bg-white text-black w-30 py-2 text-sm font-medium rounded cust-outline">
+            Save
+        </button>
+    </div>
+</section>
