@@ -1,6 +1,13 @@
-<div class="w-full text-3xl font-semibold pb-2">Recruitment > Create Job Post</div>
+<div class="w-full text-3xl font-semibold pb-2">
+    <span [routerLink]="['../']" class="underline cursor-pointer"> Recruitment</span> > Create Job
+    Post
+</div>
 
-<mat-tab-group preserveContent="true">
+<mat-tab-group
+    preserveContent="true"
+    [selectedIndex]="tabSelection"
+    (selectedTabChange)="setTabIndex($event)"
+>
     <mat-tab>
         <ng-template mat-tab-label>
             <span
@@ -11,7 +18,9 @@
             Job Description
         </ng-template>
 
-        <ng-template matTabContent> <app-tab1></app-tab1> </ng-template>
+        <ng-template matTabContent>
+            <app-tab1 (nextTabEvent)="setSelectedTab($event)"></app-tab1>
+        </ng-template>
     </mat-tab>
 
     <mat-tab>
@@ -24,7 +33,9 @@
             Selection Criteria
         </ng-template>
 
-        <ng-template matTabContent> Content 2 </ng-template>
+        <ng-template matTabContent>
+            <app-tab2 (nextTabEvent)="setSelectedTab($event)"></app-tab2>
+        </ng-template>
     </mat-tab>
 
     <mat-tab>
@@ -37,7 +48,9 @@
             Select Channels
         </ng-template>
 
-        <ng-template matTabContent> Content 3 </ng-template>
+        <ng-template matTabContent>
+            <app-tab3 (nextTabEvent)="setSelectedTab($event)"></app-tab3>
+        </ng-template>
     </mat-tab>
 
     <mat-tab>
@@ -50,6 +63,6 @@
             Schedule and Post
         </ng-template>
 
-        <ng-template matTabContent> Content 4 </ng-template>
+        <ng-template matTabContent> <app-tab4></app-tab4> </ng-template>
     </mat-tab>
 </mat-tab-group>
