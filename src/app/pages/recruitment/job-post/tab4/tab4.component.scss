@@ -1,0 +1,18 @@
+::ng-deep {
+    .mat-calendar {
+        outline: 1px solid #e0e0e0;
+
+        @apply shadow-lg rounded-lg;
+    }
+    .mat-calendar-table-header th {
+        @apply text-lg;
+    }
+}
+
+.cust-outline {
+    outline: 1px solid #e0e0e0;
+
+    &:focus {
+        outline: 1px solid #e0e0e0 !important;
+    }
+}
