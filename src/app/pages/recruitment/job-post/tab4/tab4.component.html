@@ -1,1 +1,49 @@
-<p>tab4 works!</p>
+<section class="w-full flex py-1 space-x-4">
+    <div class="w-1/2">
+        <div class="w-full">
+            <div class="font-semibold p-1">Start Date</div>
+            <mat-form-field class="w-full" appearance="outline">
+                <input type="text" [value]="startDate" matInput placeholder="22/07/2023" />
+            </mat-form-field>
+        </div>
+
+        <div class="w-full">
+            <div class="font-semibold p-1">Start Time</div>
+            <mat-form-field class="w-full" appearance="outline">
+                <input
+                    type="text"
+                    matInput
+                    placeholder="2nd May, 2023"
+                    [ngxMatTimepicker]="picker"
+                />
+                <button (click)="picker.open()" class="pr-4" matSuffix mat-icon-button>
+                    <mat-icon matSuffix>schedule</mat-icon>
+                </button>
+
+                <ngx-mat-timepicker #picker></ngx-mat-timepicker>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="w-1/2">
+        <div class="w-full">
+            <div class="font-semibold p-1">End Date</div>
+            <mat-form-field class="w-full" appearance="outline">
+                <input type="text" [value]="endDate" matInput placeholder="2nd May, 2023" />
+            </mat-form-field>
+        </div>
+
+        <div class="w-full">
+            <mat-calendar
+                (selectedChange)="_onSelectedChange($event)"
+                [selected]="selectedDateRange"
+            ></mat-calendar>
+        </div>
+    </div>
+</section>
+<div class="space-x-2 mt-10">
+    <button class="bg-black text-white w-30 py-2 text-sm font-medium rounded">Continue</button>
+    <button class="bg-white text-black w-30 py-2 text-sm font-medium rounded cust-outline">
+        Save
+    </button>
+</div>

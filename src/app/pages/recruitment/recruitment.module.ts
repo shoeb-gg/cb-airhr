@@ -7,6 +7,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {
+    DefaultMatCalendarRangeStrategy,
+    MAT_DATE_RANGE_SELECTION_STRATEGY,
+    MatDatepickerModule,
+} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
+import { NgxMatTimepickerModule } from 'ngx-mat-timepicker';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { SharedModule } from 'app/shared/shared.module';
@@ -39,6 +47,15 @@ import { Tab4Component } from './job-post/tab4/tab4.component';
         MatInputModule,
         MatSliderModule,
         MatSlideToggleModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        NgxMatTimepickerModule,
+    ],
+    providers: [
+        {
+            provide: MAT_DATE_RANGE_SELECTION_STRATEGY,
+            useClass: DefaultMatCalendarRangeStrategy,
+        },
     ],
 })
 export class RecruitmentModule {}

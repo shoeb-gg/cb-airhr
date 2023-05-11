@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     styleUrls: ['./job-post.component.scss'],
 })
 export class JobPostComponent {
-    public tabSelection: number = 0;
+    public tabSelection: number = 3;
 
     setSelectedTab(flag: boolean): void {
         if (flag) {
