@@ -61,6 +61,7 @@ export class ClassicLayoutComponent implements OnInit, OnDestroy {
                                     title: 'Onboarding',
                                     type: 'basic',
                                     icon: 'mat_solid:person_add_alt_1',
+                                    link: 'recruitment/onboarding',
                                 },
                             ],
                         },

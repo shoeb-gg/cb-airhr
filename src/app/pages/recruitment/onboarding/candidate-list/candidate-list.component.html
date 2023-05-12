@@ -1,0 +1,54 @@
+<div class="flex flex-col flex-auto p-4 shadow rounded-xl overflow-hidden space-y-2 cust-outline">
+    <div class="flex justify-between items-center">
+        <div class="text-lg font-medium">List of Candidates</div>
+        <button
+            class="cust-bg-dark text-white px-2 py-1 pr-0 rounded-xl flex justify-center items-center"
+        >
+            Add
+            <mat-icon class="text-white text-xl p-0 m-0">add</mat-icon>
+        </button>
+    </div>
+
+    <div class="my-2">
+        <mat-form-field
+            class="fuse-mat-rounded fuse-mat-dense w-full"
+            [subscriptSizing]="'dynamic'"
+        >
+            <mat-icon matPrefix class="icon-size-5" [svgIcon]="'heroicons_solid:search'"></mat-icon>
+            <input matInput [autocomplete]="'off'" [placeholder]="'Search for Candidates'" />
+        </mat-form-field>
+    </div>
+
+    <div class="mt-2">
+        <table mat-table [dataSource]="candidatesList">
+            <ng-container matColumnDef="Name">
+                <th class="cust-font-color" mat-header-cell *matHeaderCellDef>Name</th>
+                <td class="font-medium" mat-cell *matCellDef="let element">{{ element.name }}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="Contact">
+                <th class="cust-font-color" mat-header-cell *matHeaderCellDef>Contact</th>
+                <td class="font-medium" mat-cell *matCellDef="let element">
+                    {{ element.contact }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="Actions">
+                <th class="cust-font-color" mat-header-cell *matHeaderCellDef>Actions</th>
+                <td class="space-x-1" mat-cell *matCellDef="let element">
+                    <button
+                        class="bg-white text-black cust-btn-outline font-medium px-2 py-1 rounded-lg"
+                    >
+                        Analyse
+                    </button>
+                    <button class="cust-bg-dark text-white px-2 py-1 rounded-lg">Add</button>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]"> </mat-paginator>
+    </div>
+</div>
