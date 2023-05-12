@@ -13,10 +13,13 @@ import {
     MatDatepickerModule,
 } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 import { NgxMatTimepickerModule } from 'ngx-mat-timepicker';
-
 import { NgApexchartsModule } from 'ng-apexcharts';
+
 import { SharedModule } from 'app/shared/shared.module';
 
 import { RecruitmentRoutingModule } from './recruitment-routing.module';
@@ -26,6 +29,9 @@ import { Tab1Component } from './job-post/tab1/tab1.component';
 import { Tab2Component } from './job-post/tab2/tab2.component';
 import { Tab3Component } from './job-post/tab3/tab3.component';
 import { Tab4Component } from './job-post/tab4/tab4.component';
+import { OnboardingComponent } from './onboarding/onboarding.component';
+import { CandidateListComponent } from './onboarding/candidate-list/candidate-list.component';
+import { CandidateDetailsComponent } from './onboarding/candidate-details/candidate-details.component';
 
 @NgModule({
     declarations: [
@@ -35,6 +41,9 @@ import { Tab4Component } from './job-post/tab4/tab4.component';
         Tab2Component,
         Tab3Component,
         Tab4Component,
+        OnboardingComponent,
+        CandidateListComponent,
+        CandidateDetailsComponent,
     ],
     imports: [
         CommonModule,
@@ -50,6 +59,9 @@ import { Tab4Component } from './job-post/tab4/tab4.component';
         MatDatepickerModule,
         MatNativeDateModule,
         NgxMatTimepickerModule,
+        MatProgressBarModule,
+        MatTableModule,
+        MatPaginatorModule,
     ],
     providers: [
         {

@@ -1,0 +1,19 @@
+.cust-outline {
+    outline: 1px solid #e0e0e0;
+}
+
+.cust-bg-dark {
+    background-color: #434343;
+}
+
+.cust-font-color {
+    color: #8e8e8e !important;
+}
+
+.cust-btn-outline {
+    outline: 1px solid #434343;
+
+    &:focus {
+        outline: 1px solid #434343 !important;
+    }
+}
