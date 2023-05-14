@@ -76,6 +76,7 @@ export class ClassicLayoutComponent implements OnInit, OnDestroy {
                             title: 'Employee',
                             type: 'basic',
                             icon: 'mat_outline:badge',
+                            link: 'employee',
                         },
                         {
                             id: 'main.department',
