@@ -3,7 +3,13 @@
         <div class="w-full">
             <div class="font-semibold p-1">Start Date</div>
             <mat-form-field class="w-full" appearance="outline">
-                <input type="text" [value]="startDate" matInput placeholder="22/07/2023" />
+                <input matInput [matDatepicker]="StartPicker" placeholder="22/07/2023" />
+                <mat-datepicker-toggle
+                    class="mr-2"
+                    matIconSuffix
+                    [for]="StartPicker"
+                ></mat-datepicker-toggle>
+                <mat-datepicker #StartPicker></mat-datepicker>
             </mat-form-field>
         </div>
 
@@ -29,15 +35,14 @@
         <div class="w-full">
             <div class="font-semibold p-1">End Date</div>
             <mat-form-field class="w-full" appearance="outline">
-                <input type="text" [value]="endDate" matInput placeholder="2nd May, 2023" />
+                <input matInput [matDatepicker]="EndPicker" placeholder="22/07/2023" />
+                <mat-datepicker-toggle
+                    class="mr-2"
+                    matIconSuffix
+                    [for]="EndPicker"
+                ></mat-datepicker-toggle>
+                <mat-datepicker #EndPicker></mat-datepicker>
             </mat-form-field>
-        </div>
-
-        <div class="w-full">
-            <mat-calendar
-                (selectedChange)="_onSelectedChange($event)"
-                [selected]="selectedDateRange"
-            ></mat-calendar>
         </div>
     </div>
 </section>
