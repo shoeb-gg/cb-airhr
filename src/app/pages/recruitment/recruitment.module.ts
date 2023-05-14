@@ -19,6 +19,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 
 import { NgxMatTimepickerModule } from 'ngx-mat-timepicker';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import { PdfViewerModule } from '@syncfusion/ej2-angular-pdfviewer';
 
 import { SharedModule } from 'app/shared/shared.module';
 
@@ -32,6 +33,16 @@ import { Tab4Component } from './job-post/tab4/tab4.component';
 import { OnboardingComponent } from './onboarding/onboarding.component';
 import { CandidateListComponent } from './onboarding/candidate-list/candidate-list.component';
 import { CandidateDetailsComponent } from './onboarding/candidate-details/candidate-details.component';
+import { PdfViewerComponent } from './onboarding/candidate-details/pdf-viewer/pdf-viewer.component';
+
+import {
+    MAT_RIPPLE_GLOBAL_OPTIONS,
+    RippleGlobalOptions,
+} from '@angular/material/core';
+
+const globalRippleConfig: RippleGlobalOptions = {
+    disabled: true,
+};
 
 @NgModule({
     declarations: [
@@ -44,6 +55,7 @@ import { CandidateDetailsComponent } from './onboarding/candidate-details/candid
         OnboardingComponent,
         CandidateListComponent,
         CandidateDetailsComponent,
+        PdfViewerComponent,
     ],
     imports: [
         CommonModule,
@@ -62,12 +74,14 @@ import { CandidateDetailsComponent } from './onboarding/candidate-details/candid
         MatProgressBarModule,
         MatTableModule,
         MatPaginatorModule,
+        PdfViewerModule,
     ],
     providers: [
         {
             provide: MAT_DATE_RANGE_SELECTION_STRATEGY,
             useClass: DefaultMatCalendarRangeStrategy,
         },
+        { provide: MAT_RIPPLE_GLOBAL_OPTIONS, useValue: globalRippleConfig },
     ],
 })
 export class RecruitmentModule {}

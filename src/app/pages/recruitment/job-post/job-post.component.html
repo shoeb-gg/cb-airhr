@@ -1,10 +1,14 @@
-<div class="w-full text-3xl font-semibold pb-2 flex items-center">
-    <span [routerLink]="['../']" class="text-primary-500 cursor-pointer"> Recruitment</span>
-    <mat-icon
-        class="icon-size-8 text-secondary mx-1"
-        [svgIcon]="'heroicons_solid:chevron-right'"
-    ></mat-icon>
-    Create Job Post
+<div class="flex flex-wrap items-center font-medium">
+    <div>
+        <a [routerLink]="['../']" class="whitespace-nowrap text-primary-500">Recruitment</a>
+    </div>
+    <div class="flex items-center ml-1 whitespace-nowrap">
+        <mat-icon
+            class="icon-size-5 text-secondary"
+            [svgIcon]="'heroicons_solid:chevron-right'"
+        ></mat-icon>
+        <a class="ml-1 t">Create Job Post</a>
+    </div>
 </div>
 
 <mat-tab-group
