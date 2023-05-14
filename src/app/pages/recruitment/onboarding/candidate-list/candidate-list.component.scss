@@ -17,3 +17,30 @@
         outline: 1px solid #434343 !important;
     }
 }
+::ng-deep {
+    .e-grid .e-gridheader tr th:first-child {
+        padding-left: 10px !important;
+    }
+    .e-grid .e-headercell,
+    .e-grid .e-detailheadercell {
+        padding: 0 10px 0 !important;
+    }
+
+    .e-grid .e-rowcell:first-child,
+    .e-grid .e-summarycell:first-child {
+        padding-left: 10px !important;
+    }
+
+    .e-grid .e-rowcell {
+        padding: 8px 10px !important;
+    }
+
+    .e-icons {
+        display: none !important;
+    }
+
+    .e-grid .e-filterbarcell,
+    .e-grid .e-filterbarcelldisabled {
+        padding: 0 10px !important;
+    }
+}

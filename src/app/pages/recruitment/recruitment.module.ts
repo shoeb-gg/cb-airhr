@@ -33,7 +33,9 @@ import { Tab4Component } from './job-post/tab4/tab4.component';
 import { OnboardingComponent } from './onboarding/onboarding.component';
 import { CandidateListComponent } from './onboarding/candidate-list/candidate-list.component';
 import { CandidateDetailsComponent } from './onboarding/candidate-details/candidate-details.component';
+
 import { PdfViewerComponent } from './onboarding/candidate-details/pdf-viewer/pdf-viewer.component';
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid';
 
 import {
     MAT_RIPPLE_GLOBAL_OPTIONS,
@@ -75,6 +77,7 @@ const globalRippleConfig: RippleGlobalOptions = {
         MatTableModule,
         MatPaginatorModule,
         PdfViewerModule,
+        TreeGridModule
     ],
     providers: [
         {

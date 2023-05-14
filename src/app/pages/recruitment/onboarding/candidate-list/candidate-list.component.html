@@ -1,46 +1,31 @@
-<div class="flex flex-col flex-auto p-4 shadow rounded-xl overflow-hidden space-y-2 cust-outline">
+<div class="flex flex-col flex-auto p-4 shadow rounded-xl overflow-hidden cust-outline">
     <div class="text-lg font-medium py-2 px-2">List of Candidates</div>
 
-    <div class="my-2">
-        <mat-form-field
-            class="fuse-mat-rounded fuse-mat-dense w-full"
-            [subscriptSizing]="'dynamic'"
-        >
-            <mat-icon matPrefix class="icon-size-5" [svgIcon]="'heroicons_solid:search'"></mat-icon>
-            <input matInput [autocomplete]="'off'" [placeholder]="'Search for Candidates'" />
-        </mat-form-field>
-    </div>
-
-    <div class="mt-2">
-        <table mat-table [dataSource]="candidatesList">
-            <ng-container matColumnDef="Name">
-                <th class="cust-font-color" mat-header-cell *matHeaderCellDef>Name</th>
-                <td class="font-medium" mat-cell *matCellDef="let element">{{ element.name }}</td>
-            </ng-container>
-
-            <ng-container matColumnDef="Contact">
-                <th class="cust-font-color" mat-header-cell *matHeaderCellDef>Contact</th>
-                <td class="font-medium" mat-cell *matCellDef="let element">
-                    {{ element.contact }}
-                </td>
-            </ng-container>
-
-            <ng-container matColumnDef="Actions">
-                <th class="cust-font-color" mat-header-cell *matHeaderCellDef>Actions</th>
-                <td class="space-x-1" mat-cell *matCellDef="let element">
+    <ejs-treegrid
+        [treeColumnIndex]="1"
+        [dataSource]="candidatesList"
+        [allowFiltering]="true"
+        [allowPaging]="true"
+        [pageSettings]="pageSettings"
+    >
+        <e-columns>
+            <e-column field="name" headerText="Name" textAlign="left" [width]="130"></e-column>
+            <e-column
+                field="contact"
+                headerText="Contact"
+                textAlign="right"
+                [width]="100"
+            ></e-column>
+            <e-column id="template" textAlign="center" headerText="Actions">
+                <ng-template #template let-data>
                     <button
-                        class="bg-white text-black cust-btn-outline font-medium px-2 py-1 rounded-lg"
+                        class="bg-white text-black cust-btn-outline py-1 px-1.5 rounded-lg mr-1"
                     >
                         Analyse
                     </button>
-                    <button class="cust-bg-dark text-white px-2 py-1 rounded-lg">Add</button>
-                </td>
-            </ng-container>
-
-            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
-        </table>
-
-        <mat-paginator [pageSizeOptions]="[5, 10, 20]"> </mat-paginator>
-    </div>
+                    <button class="cust-bg-dark py-1 px-1.5 text-white rounded-lg">Remove</button>
+                </ng-template>
+            </e-column>
+        </e-columns>
+    </ejs-treegrid>
 </div>
