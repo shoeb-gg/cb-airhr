@@ -1,0 +1,59 @@
+<section class="bg-white rounded-md py-2 px-4">
+    <div class="flex my-2">
+        <div class="text-lg font-semibold">Attendance</div>
+    </div>
+
+    <div>
+        <div class="flex flex-col flex-auto">
+            <div class="flex flex-col flex-auto">
+                <apx-chart
+                    class="flex-auto w-full h-80"
+                    [chart]="chartGithubIssues.chart"
+                    [colors]="chartGithubIssues.colors"
+                    [dataLabels]="chartGithubIssues.dataLabels"
+                    [grid]="chartGithubIssues.grid"
+                    [labels]="chartGithubIssues.labels"
+                    [legend]="chartGithubIssues.legend"
+                    [plotOptions]="chartGithubIssues.plotOptions"
+                    [series]="chartGithubIssues.series['this-week']"
+                    [states]="chartGithubIssues.states"
+                    [stroke]="chartGithubIssues.stroke"
+                    [tooltip]="chartGithubIssues.tooltip"
+                    [xaxis]="chartGithubIssues.xaxis"
+                    [yaxis]="chartGithubIssues.yaxis"
+                ></apx-chart>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+    <div>
+        <ejs-treegrid
+            [dataSource]="employeeList"
+            [allowPaging]="true"
+            [pageSettings]="pageSettings"
+        >
+            <e-columns>
+                <e-column field="name" headerText="Date" textAlign="left" [width]="130"></e-column>
+                <e-column
+                    field=""
+                    headerText="Punched In"
+                    textAlign="left"
+                    [width]="130"
+                ></e-column>
+                <e-column
+                    field=""
+                    headerText="Punched out"
+                    textAlign="left"
+                    [width]="130"
+                ></e-column>
+                <e-column
+                    field=""
+                    headerText="Total Time"
+                    textAlign="left"
+                    [width]="130"
+                ></e-column>
+            </e-columns>
+        </ejs-treegrid>
+    </div>
+</section>

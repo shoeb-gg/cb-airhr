@@ -1,7 +1,3 @@
-.cust-bg {
-    background-color: #434343;
-}
-
 ::ng-deep {
     .e-grid .e-gridheader tr th:first-child {
         padding-left: 15px !important;
@@ -27,15 +23,5 @@
     .e-grid .e-filterbarcell,
     .e-grid .e-filterbarcelldisabled {
         padding: 0 15px !important;
-    }
-
-    .e-grid .e-rowcell.customcss {
-        cursor: pointer !important;
-        text-underline-position: under;
-
-        &:hover {
-            color: rgb(89, 89, 255);
-            text-decoration: underline;
-        }
     }
 }
