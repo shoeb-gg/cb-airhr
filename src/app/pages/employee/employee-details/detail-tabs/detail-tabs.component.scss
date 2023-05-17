@@ -1,0 +1,36 @@
+.cust-bg {
+    background-color: #efefef;
+}
+
+.cust-outline {
+    outline: 1px solid #e0e0e0;
+}
+
+::ng-deep {
+    .mat-mdc-tab-group .mat-mdc-tab-header .mat-mdc-tab-label-container {
+        margin: 0;
+    }
+    .theme-default.light
+        .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active
+        .mdc-tab__text-label {
+        color: black;
+    }
+    .theme-default.light
+        .mat-mdc-tab:not(.mat-mdc-tab-disabled)
+        .mdc-tab-indicator__content--underline {
+        border-color: black;
+    }
+
+    .mat-form-field-appearance-outline.mat-focused
+        .mat-form-field-outline-thick {
+        color: #000000;
+    }
+    .mat-mdc-tab-group .mat-mdc-tab-body-content {
+        padding: 0;
+        padding-top: 0.5rem;
+    }
+
+    .mat-mdc-tab-body-content {
+        overflow: hidden !important;
+    }
+}

@@ -1,0 +1,36 @@
+<div class="rounded-lg cust-bg mt-4 py-0.5 px-0.5">
+    <mat-tab-group
+        preserveContent="true"
+        [selectedIndex]="tabSelection"
+        (selectedTabChange)="setTabIndex($event)"
+    >
+        <mat-tab>
+            <ng-template mat-tab-label> Allowance </ng-template>
+
+            <ng-template matTabContent> Allowance content </ng-template>
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label> Attendance </ng-template>
+
+            <ng-template matTabContent>
+                <app-attendance-info-tab></app-attendance-info-tab>
+            </ng-template>
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label> Folder </ng-template>
+
+            <ng-template matTabContent> Folder content </ng-template>
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label> History </ng-template>
+
+            <ng-template matTabContent> History content </ng-template>
+        </mat-tab>
+
+        <mat-tab>
+            <ng-template mat-tab-label> Bonus </ng-template>
+
+            <ng-template matTabContent> Bonus content </ng-template>
+        </mat-tab>
+    </mat-tab-group>
+</div>
