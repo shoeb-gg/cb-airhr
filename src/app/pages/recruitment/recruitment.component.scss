@@ -9,6 +9,12 @@
 .cust-font {
     color: #8e8e8e;
 }
+
 .cust-bg {
     background-color: #fafafa;
+}
+.cust-bg-hover {
+    &:hover {
+        background-color: #f0f0f0;
+    }
 }

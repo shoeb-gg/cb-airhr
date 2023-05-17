@@ -58,11 +58,11 @@ export class CandidateDetailsComponent {
         };
     }
 
-    setSelectedTab(flag: boolean): void {
-        if (flag) {
-            this.tabSelection++;
-        }
-    }
+    // setSelectedTab(flag: boolean): void {
+    //     if (flag) {
+    //         this.tabSelection++;
+    //     }
+    // }
 
     setTabIndex(index: any) {
         this.tabSelection = index.index;
