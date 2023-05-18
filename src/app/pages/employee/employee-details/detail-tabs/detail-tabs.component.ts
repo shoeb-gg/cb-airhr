@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     styleUrls: ['./detail-tabs.component.scss'],
 })
 export class DetailTabsComponent {
-    public tabSelection: number = 1;
+    public tabSelection: number = 2;
 
     setSelectedTab(flag: boolean): void {
         if (flag) {

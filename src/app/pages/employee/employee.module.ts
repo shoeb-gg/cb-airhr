@@ -19,6 +19,7 @@ import {
     RippleGlobalOptions,
 } from '@angular/material/core';
 import { AttendanceInfoTabComponent } from './employee-details/detail-tabs/attendance-info-tab/attendance-info-tab.component';
+import { PayrollTabComponent } from './employee-details/detail-tabs/payroll-tab/payroll-tab.component';
 
 const globalRippleConfig: RippleGlobalOptions = {
     disabled: true,
@@ -30,6 +31,7 @@ const globalRippleConfig: RippleGlobalOptions = {
         EmployeeDetailsComponent,
         DetailTabsComponent,
         AttendanceInfoTabComponent,
+        PayrollTabComponent,
     ],
     imports: [
         CommonModule,
