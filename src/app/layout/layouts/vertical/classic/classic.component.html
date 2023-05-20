@@ -3,7 +3,7 @@
 
 <!-- Navigation -->
 <fuse-vertical-navigation
-    class="print:hidden cust-bg"
+    class="print:hidden dark bg-gray-900"
     [mode]="isScreenSmall ? 'over' : 'side'"
     [name]="'mainNavigation'"
     [navigation]="navigation.default"
@@ -14,7 +14,7 @@
     <ng-container fuseVerticalNavigationContentHeader>
         <!-- Logo -->
         <div class="flex items-center h-20 p-6 pb-0">
-            <img class="dark:hidden w-44" src="assets/logo.svg" alt="Logo image" />
+            <img class="w-44" src="assets/logo.svg" alt="Logo image" />
         </div>
     </ng-container>
 </fuse-vertical-navigation>

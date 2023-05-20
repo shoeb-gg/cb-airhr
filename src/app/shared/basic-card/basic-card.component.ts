@@ -9,4 +9,6 @@ export class BasicCardComponent {
     @Input() title: string;
     @Input() centerNumber: number;
     @Input() footer: string;
+    @Input() coloredText: string;
+    @Input() color: string;
 }

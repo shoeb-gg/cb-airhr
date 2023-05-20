@@ -1,5 +1,5 @@
-<section class="w-full flex py-1 space-x-4">
-    <div class="w-1/2">
+<section class="w-full flex flex-col sm:flex-row py-1 sm:space-x-4">
+    <div class="w-full sm:w-1/2">
         <div class="w-full">
             <div class="font-semibold p-1">Job Title</div>
             <mat-form-field class="w-full" appearance="outline">
@@ -31,21 +31,9 @@
                 ></textarea>
             </mat-form-field>
         </div>
-
-        <div class="space-x-2">
-            <button
-                (click)="gotoNextTab()"
-                class="bg-black text-white w-30 py-2 text-sm font-medium rounded"
-            >
-                Continue
-            </button>
-            <button class="bg-white text-black w-30 py-2 text-sm font-medium rounded cust-outline">
-                Save
-            </button>
-        </div>
     </div>
 
-    <div class="w-1/2">
+    <div class="w-full sm:w-1/2">
         <div class="w-full">
             <div class="font-semibold p-1">Department</div>
             <mat-form-field class="w-full" appearance="outline">
@@ -68,3 +56,15 @@
         </div>
     </div>
 </section>
+
+<div class="space-x-2">
+    <button
+        (click)="gotoNextTab()"
+        class="bg-black text-white w-30 py-2 text-sm font-medium rounded"
+    >
+        Continue
+    </button>
+    <button class="bg-white text-black w-30 py-2 text-sm font-medium rounded cust-outline">
+        Save
+    </button>
+</div>
