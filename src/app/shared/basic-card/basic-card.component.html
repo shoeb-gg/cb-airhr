@@ -1,6 +1,27 @@
-<div class="space-y-2">
-    <div class="text-lg font-semibold tracking-tight leading-6 truncate">{{ title }}</div>
-
-    <div class="text-4xl font-bold tracking-tight leading-none">{{ centerNumber }}</div>
-    <div class="text-md font-medium">{{ footer }}</div>
+<div class="flex flex-col flex-auto p-6 bg-card h-full rounded-2xl overflow-hidden">
+    <div class="flex items-start justify-between">
+        <div class="text-lg font-medium tracking-tight leading-6 truncate">{{ title }}</div>
+        <div class="ml-2 -mt-2 -mr-3">
+            <button mat-icon-button [matMenuTriggerFor]="summaryMenu">
+                <mat-icon
+                    class="icon-size-5"
+                    [svgIcon]="'heroicons_solid:dots-vertical'"
+                ></mat-icon>
+            </button>
+            <mat-menu #summaryMenu="matMenu">
+                <button mat-menu-item>Yesterday</button>
+                <button mat-menu-item>2 days ago</button>
+                <button mat-menu-item>3 days ago</button>
+            </mat-menu>
+        </div>
+    </div>
+    <div class="flex flex-col items-center mt-5">
+        <div class="text-7xl sm:text-8xl font-bold tracking-tight leading-none" [class]="color">
+            {{ centerNumber }}
+        </div>
+        <div class="text-lg font-medium dark:text-blue-500" [class]="color">{{ coloredText }}</div>
+        <div class="flex items-baseline justify-center w-full mt-5 text-secondary">
+            {{ footer }}
+        </div>
+    </div>
 </div>

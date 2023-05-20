@@ -7,12 +7,13 @@ import { OnboardingComponent } from './onboarding/onboarding.component';
 import { CandidateDetailsComponent } from './onboarding/candidate-details/candidate-details.component';
 
 const routes: Routes = [
+    { path: '', pathMatch: 'full', redirectTo: 'job-post' },
     {
-        path: '',
+        path: 'job-post',
         component: RecruitmentComponent,
     },
     {
-        path: 'job-post',
+        path: 'new-job',
         component: JobPostComponent,
     },
     {
