@@ -1,6 +1,8 @@
 <section class="w-full flex flex-col">
     <ng-container *ngFor="let channel of jobPostChannels">
-        <div class="my-2 py-3 px-4 cust-bg flex justify-between items-center rounded-lg">
+        <div
+            class="my-2 py-3 px-4 cust-bg flex flex-col sm:flex-row justify-center sm:justify-between space-y-6 sm:space-y-0 items-start sm:items-center rounded-lg scale-90 md:scale-100"
+        >
             <div class="flex items-center">
                 <img class="h-16 w-16 mr-2" [src]="channel.icon" alt="" />
 
@@ -10,18 +12,16 @@
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <div class="text-lg font-semibold leading-3">{{ channel.expectedReach }}</div>
-                    <div class="text-sm">Expected Reach</div>
+            <div class="pl-5 sm:p-0">
+                <div class="text-lg font-semibold leading-3">
+                    {{ channel.expectedReach }}
                 </div>
+                <div class="text-sm">Expected Reach</div>
             </div>
 
-            <div>
-                <div>
-                    <div class="text-lg font-semibold leading-3">{{ channel.avgCost }}</div>
-                    <div class="text-sm">Average Cost</div>
-                </div>
+            <div class="pl-5 sm:p-0">
+                <div class="text-lg font-semibold leading-3">{{ channel.avgCost }}</div>
+                <div class="text-sm">Average Cost</div>
             </div>
 
             <div class="space-x-4">
@@ -35,7 +35,9 @@
         </div>
     </ng-container>
 
-    <div class="space-x-2 mt-10">
+    <div
+        class="space-y-2 sm:space-y-0 sm:space-x-2 mt-10 flex flex-col sm:flex-row justify-center items-center"
+    >
         <button
             (click)="gotoNextTab()"
             class="bg-black text-white w-30 py-2 text-sm font-medium rounded"

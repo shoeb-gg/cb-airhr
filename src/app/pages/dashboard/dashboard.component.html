@@ -3,7 +3,7 @@
 <section class="w-full flex py-1 space-x-4">
     <!-- <div class="w-3/5 space-y-4"> -->
     <div class="w-full space-y-4">
-        <span class="w-full flex space-x-4">
+        <span class="w-full flex sm:space-x-4 space-y-4 sm:space-y-0 flex-col sm:flex-row">
             <div class="flex flex-col flex-auto cust-bg shadow rounded-2xl overflow-hidden">
                 <app-basic-card
                     [title]="'Available Position'"
@@ -35,8 +35,12 @@
             </div>
         </span>
 
-        <span class="w-full flex justify-evenly space-x-4">
-            <div class="w-1/2 flex flex-col flex-auto bg-card shadow rounded-2xl overflow-hidden">
+        <span
+            class="w-full flex justify-evenly sm:space-x-4 space-y-4 sm:space-y-0 flex-col sm:flex-row"
+        >
+            <div
+                class="w-full sm:w-1/2 flex flex-col flex-auto bg-card shadow rounded-2xl overflow-hidden"
+            >
                 <div class="flex items-start justify-between m-6 mb-0">
                     <div class="text-lg font-medium tracking-tight leading-6 truncate">
                         Total Employees
@@ -75,7 +79,9 @@
                 </div>
             </div>
 
-            <div class="w-1/2 flex flex-col flex-auto bg-card shadow rounded-2xl overflow-hidden">
+            <div
+                class="w-full sm:w-1/2 flex flex-col flex-auto bg-card shadow rounded-2xl overflow-hidden"
+            >
                 <div class="flex items-start justify-between m-6 mb-0">
                     <div class="text-lg font-medium tracking-tight leading-6 truncate">
                         Total Request
