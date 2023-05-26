@@ -37,3 +37,13 @@ C:\Users\uddin\Desktop\AirHR - CB - BE\airHr_main\Api\obj\Debug\net7.0\refint\Ap
 C:\Users\uddin\Desktop\AirHR - CB - BE\airHr_main\Api\obj\Debug\net7.0\Api.pdb
 C:\Users\uddin\Desktop\AirHR - CB - BE\airHr_main\Api\obj\Debug\net7.0\Api.genruntimeconfig.cache
 C:\Users\uddin\Desktop\AirHR - CB - BE\airHr_main\Api\obj\Debug\net7.0\ref\Api.dll
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Api\obj\Debug\net7.0\Api.csproj.AssemblyReference.cache
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Api\obj\Debug\net7.0\Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Api\obj\Debug\net7.0\Api.AssemblyInfoInputs.cache
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Api\obj\Debug\net7.0\Api.AssemblyInfo.cs
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Api\obj\Debug\net7.0\Api.csproj.CoreCompileInputs.cache
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Api\obj\Debug\net7.0\Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Api\obj\Debug\net7.0\Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Api\obj\Debug\net7.0\Api.dll
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Api\obj\Debug\net7.0\refint\Api.dll
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Api\obj\Debug\net7.0\Api.pdb

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\uddin\\Desktop\\AirHR - CB - BE\\airHr_main\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\uddin\\Desktop\\AirHR - CB\\airHr_main\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\uddin\\Desktop\\AirHR - CB - BE\\airHr_main\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Users\\uddin\\Desktop\\AirHR - CB\\airHr_main\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\uddin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\uddin\\Desktop\\AirHR - CB - BE\\airHr_main\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\uddin\\Desktop\\AirHR - CB\\airHr_main\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\uddin\\AppData\\Roaming\\NuGet\\NuGet.Config",

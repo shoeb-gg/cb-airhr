@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entities.JobPost
 {
-    internal class JobPostSelectionCriteria
+    public class JobPostSelectionCriteria
     {
         public string Expertise { get; set; }
         public string EducationalQualification { get; set; }

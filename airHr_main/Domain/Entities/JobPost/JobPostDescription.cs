@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entities.Job
 {
-    internal class JobPostDescription
+    public class JobPostDescription
     {
         public string JobTitle{ get; set; } 
         public string JobDescription { get; set; }

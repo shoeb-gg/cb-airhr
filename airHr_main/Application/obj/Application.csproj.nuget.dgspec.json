@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\uddin\\Desktop\\AirHR - CB - BE\\airHr_main\\Application\\Application.csproj": {}
+    "C:\\Users\\uddin\\Desktop\\AirHR - CB\\airHr_main\\Application\\Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\uddin\\Desktop\\AirHR - CB - BE\\airHr_main\\Application\\Application.csproj": {
+    "C:\\Users\\uddin\\Desktop\\AirHR - CB\\airHr_main\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\uddin\\Desktop\\AirHR - CB - BE\\airHr_main\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\uddin\\Desktop\\AirHR - CB\\airHr_main\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\uddin\\Desktop\\AirHR - CB - BE\\airHr_main\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\uddin\\Desktop\\AirHR - CB\\airHr_main\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\uddin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\uddin\\Desktop\\AirHR - CB - BE\\airHr_main\\Application\\obj\\",
+        "outputPath": "C:\\Users\\uddin\\Desktop\\AirHR - CB\\airHr_main\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\uddin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\uddin\\Desktop\\AirHR - CB - BE\\airHr_main\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\uddin\\Desktop\\AirHR - CB - BE\\airHr_main\\Domain\\Domain.csproj"
+              "C:\\Users\\uddin\\Desktop\\AirHR - CB\\airHr_main\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\uddin\\Desktop\\AirHR - CB\\airHr_main\\Domain\\Domain.csproj"
               }
             }
           }
@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[12.0.1, )"
             },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.16.0, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.5.2, )"
@@ -62,11 +66,29 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[12.0.1, )"
+              "version": "[11.1.0, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.1.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Cosmos": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
             }
           },
           "imports": [
@@ -89,14 +111,14 @@
         }
       }
     },
-    "C:\\Users\\uddin\\Desktop\\AirHR - CB - BE\\airHr_main\\Domain\\Domain.csproj": {
+    "C:\\Users\\uddin\\Desktop\\AirHR - CB\\airHr_main\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\uddin\\Desktop\\AirHR - CB - BE\\airHr_main\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\uddin\\Desktop\\AirHR - CB\\airHr_main\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\uddin\\Desktop\\AirHR - CB - BE\\airHr_main\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\uddin\\Desktop\\AirHR - CB\\airHr_main\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\uddin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\uddin\\Desktop\\AirHR - CB - BE\\airHr_main\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\uddin\\Desktop\\AirHR - CB\\airHr_main\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\uddin\\AppData\\Roaming\\NuGet\\NuGet.Config",

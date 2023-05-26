@@ -3,7 +3,7 @@ using Domain.Entities.Job;
 
 namespace Domain.Entities.JobPost
 {
-    internal class JobPost : AuditableEntity
+    public class JobPost : AuditableEntity
     {
         public JobPostDescription JobDescription { get; set; }
         public JobPostSelectionCriteria JobSelectionCriteria { get; set; }

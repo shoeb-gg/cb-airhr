@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entities.JobPost
 {
-    internal class JobPostChannels
+    public class JobPostChannels
     {
         public string ChannelTitle { get; set; }
         public string ChannelPageName { get; set; }
