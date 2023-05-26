@@ -1,0 +1,24 @@
+C:\Users\uddin\Desktop\AirHR - CB - BE\airHr_main\Domain\bin\Debug\net7.0\Domain.deps.json
+C:\Users\uddin\Desktop\AirHR - CB - BE\airHr_main\Domain\bin\Debug\net7.0\Domain.dll
+C:\Users\uddin\Desktop\AirHR - CB - BE\airHr_main\Domain\bin\Debug\net7.0\Domain.pdb
+C:\Users\uddin\Desktop\AirHR - CB - BE\airHr_main\Domain\obj\Debug\net7.0\Domain.csproj.AssemblyReference.cache
+C:\Users\uddin\Desktop\AirHR - CB - BE\airHr_main\Domain\obj\Debug\net7.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uddin\Desktop\AirHR - CB - BE\airHr_main\Domain\obj\Debug\net7.0\Domain.AssemblyInfoInputs.cache
+C:\Users\uddin\Desktop\AirHR - CB - BE\airHr_main\Domain\obj\Debug\net7.0\Domain.AssemblyInfo.cs
+C:\Users\uddin\Desktop\AirHR - CB - BE\airHr_main\Domain\obj\Debug\net7.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\uddin\Desktop\AirHR - CB - BE\airHr_main\Domain\obj\Debug\net7.0\Domain.dll
+C:\Users\uddin\Desktop\AirHR - CB - BE\airHr_main\Domain\obj\Debug\net7.0\refint\Domain.dll
+C:\Users\uddin\Desktop\AirHR - CB - BE\airHr_main\Domain\obj\Debug\net7.0\Domain.pdb
+C:\Users\uddin\Desktop\AirHR - CB - BE\airHr_main\Domain\obj\Debug\net7.0\ref\Domain.dll
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Domain\bin\Debug\net7.0\Domain.deps.json
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Domain\bin\Debug\net7.0\Domain.dll
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Domain\bin\Debug\net7.0\Domain.pdb
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Domain\obj\Debug\net7.0\Domain.csproj.AssemblyReference.cache
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Domain\obj\Debug\net7.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Domain\obj\Debug\net7.0\Domain.AssemblyInfoInputs.cache
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Domain\obj\Debug\net7.0\Domain.AssemblyInfo.cs
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Domain\obj\Debug\net7.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Domain\obj\Debug\net7.0\Domain.dll
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Domain\obj\Debug\net7.0\refint\Domain.dll
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Domain\obj\Debug\net7.0\Domain.pdb
+C:\Users\uddin\Desktop\AirHR - CB\airHr_main\Domain\obj\Debug\net7.0\ref\Domain.dll
