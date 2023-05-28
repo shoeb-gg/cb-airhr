@@ -1,57 +1,57 @@
 <section class="w-full flex flex-col sm:flex-row py-1 sm:space-x-4">
-    <div class="w-full sm:w-1/2">
+    <div class="w-full sm:w-1/2 space-y-5">
         <div class="w-full">
-            <div class="font-semibold p-1">Job Title</div>
-            <mat-form-field class="w-full" appearance="outline">
-                <input type="text" matInput placeholder="Ex. Product Manager" />
+            <mat-form-field class="w-full" [subscriptSizing]="'dynamic'">
+                <mat-label>Job Title</mat-label>
+                <input placeholder="Ex. Product Manager" type="text" matInput />
             </mat-form-field>
         </div>
 
         <div class="w-full">
-            <div class="font-semibold p-1">Company Name</div>
-            <mat-form-field class="w-full" appearance="outline">
-                <input type="text" matInput placeholder="Ex. Google LLC" />
+            <mat-form-field class="w-full" [subscriptSizing]="'dynamic'">
+                <mat-label>Company Name</mat-label>
+                <input placeholder="Ex. Cuebites" type="text" matInput />
             </mat-form-field>
         </div>
 
         <div class="w-full">
-            <div class="font-semibold p-1">Salary/Pay Rate</div>
-            <mat-form-field class="w-full" appearance="outline">
-                <input type="text" matInput placeholder="Ex. BDT 250000" />
+            <mat-form-field class="w-full" [subscriptSizing]="'dynamic'">
+                <mat-label>Salary/Pay Rate</mat-label>
+                <input placeholder="Ex. BDT 25000" type="text" matInput />
             </mat-form-field>
         </div>
 
         <div class="w-full">
-            <div class="font-semibold p-1">Job Description</div>
-            <mat-form-field class="w-full" appearance="outline">
+            <mat-form-field class="w-full" [subscriptSizing]="'dynamic'">
+                <mat-label>Job Description</mat-label>
                 <textarea
+                    placeholder="Ex. Give a detailed job description"
                     type="text"
                     matInput
-                    placeholder="Give a detailed job description"
                 ></textarea>
             </mat-form-field>
         </div>
     </div>
 
-    <div class="w-full sm:w-1/2">
+    <div class="w-full sm:w-1/2 space-y-5">
         <div class="w-full">
-            <div class="font-semibold p-1">Department</div>
-            <mat-form-field class="w-full" appearance="outline">
-                <input type="text" matInput placeholder="Developer" />
+            <mat-form-field class="w-full" [subscriptSizing]="'dynamic'">
+                <mat-label>Department</mat-label>
+                <input placeholder="Ex. Human Resource" type="text" matInput />
             </mat-form-field>
         </div>
 
         <div class="w-full">
-            <div class="font-semibold p-1">Job Hours</div>
-            <mat-form-field class="w-full" appearance="outline">
-                <input type="text" matInput placeholder="Ex. 40 Hours" />
+            <mat-form-field class="w-full" [subscriptSizing]="'dynamic'">
+                <mat-label>Job Hours</mat-label>
+                <input placeholder="Ex. 8hours" type="text" matInput />
             </mat-form-field>
         </div>
 
         <div class="w-full">
-            <div class="font-semibold p-1">Contact Address</div>
-            <mat-form-field class="w-full" appearance="outline">
-                <input type="text" matInput placeholder="digital@cuebites.com" />
+            <mat-form-field class="w-full" [subscriptSizing]="'dynamic'">
+                <mat-label>Contact Address</mat-label>
+                <input type="text" matInput />
             </mat-form-field>
         </div>
     </div>

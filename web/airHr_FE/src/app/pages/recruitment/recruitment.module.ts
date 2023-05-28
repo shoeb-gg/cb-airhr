@@ -16,6 +16,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import {MatStepperModule} from '@angular/material/stepper';
+
 
 import { NgxMatTimepickerModule } from 'ngx-mat-timepicker';
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -77,7 +79,8 @@ const globalRippleConfig: RippleGlobalOptions = {
         MatTableModule,
         MatPaginatorModule,
         PdfViewerModule,
-        TreeGridModule
+        TreeGridModule,
+        MatStepperModule,
     ],
     providers: [
         {

@@ -1,4 +1,4 @@
-<div class="flex flex-wrap items-center font-medium">
+<div class="flex flex-wrap items-center font-medium pt-2 pb-5">
     <div>
         <a [routerLink]="['../']" class="whitespace-nowrap text-primary-500">Recruitment</a>
     </div>
@@ -11,66 +11,32 @@
     </div>
 </div>
 
-<mat-tab-group
+<mat-horizontal-stepper
+    [linear]="false"
     preserveContent="true"
     [selectedIndex]="tabSelection"
     (selectedTabChange)="setTabIndex($event)"
 >
-    <mat-tab>
-        <ng-template mat-tab-label>
-            <span
-                class="bg-black text-white text-sm h-5 w-5 rounded-full flex justify-center items-center mr-2"
-            >
-                1
-            </span>
-            Job Description
-        </ng-template>
-
-        <ng-template matTabContent>
+    <mat-step>
+        <ng-template matStepLabel>Job Description</ng-template>
+        <ng-template matStepContent>
             <app-tab1 (nextTabEvent)="setSelectedTab($event)"></app-tab1>
         </ng-template>
-    </mat-tab>
-
-    <mat-tab>
-        <ng-template mat-tab-label>
-            <span
-                class="bg-black text-white text-sm h-5 w-5 rounded-full flex justify-center items-center mr-2"
-            >
-                2
-            </span>
-            Selection Criteria
-        </ng-template>
-
-        <ng-template matTabContent>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Selection Criteria</ng-template>
+        <ng-template matStepContent>
             <app-tab2 (nextTabEvent)="setSelectedTab($event)"></app-tab2>
         </ng-template>
-    </mat-tab>
-
-    <mat-tab>
-        <ng-template mat-tab-label>
-            <span
-                class="bg-black text-white text-sm h-5 w-5 rounded-full flex justify-center items-center mr-2"
-            >
-                3
-            </span>
-            Select Channels
-        </ng-template>
-
-        <ng-template matTabContent>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Select Channels</ng-template>
+        <ng-template matStepContent>
             <app-tab3 (nextTabEvent)="setSelectedTab($event)"></app-tab3>
         </ng-template>
-    </mat-tab>
-
-    <mat-tab>
-        <ng-template mat-tab-label>
-            <span
-                class="bg-black text-white text-sm h-5 w-5 rounded-full flex justify-center items-center mr-2"
-            >
-                4
-            </span>
-            Schedule and Post
-        </ng-template>
-
-        <ng-template matTabContent> <app-tab4></app-tab4> </ng-template>
-    </mat-tab>
-</mat-tab-group>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Schedule and Post</ng-template>
+        <ng-template matStepContent> <app-tab4></app-tab4> </ng-template>
+    </mat-step>
+</mat-horizontal-stepper>
