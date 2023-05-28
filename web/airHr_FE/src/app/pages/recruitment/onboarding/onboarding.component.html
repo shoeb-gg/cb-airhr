@@ -7,54 +7,63 @@
             class="icon-size-5 text-secondary"
             [svgIcon]="'heroicons_solid:chevron-right'"
         ></mat-icon>
-        <a class="ml-1 t">Onboarding</a>
+        <a class="ml-1">Onboarding</a>
     </div>
 </div>
 
 <section class="w-full flex flex-col py-1 mt-2">
-    <div class="text-4xl font-semibold">Check out Top Picks</div>
+    <div
+        class="sm:col-span-2 md:col-span-4 lg:col-span-2 flex flex-col flex-auto px-2 py-4 sm:p-6 bg-card shadow rounded-2xl overflow-hidden"
+    >
+        <div class="flex flex-col sm:flex-row items-start justify-between">
+            <div class="text-lg font-medium tracking-tight leading-6 truncate">Posted Jobs</div>
+        </div>
 
-    <div class="text-md font-medium cust-font-color">
-        Our predictive ai generated these top picks for you based on your tonality and preferences.
-    </div>
-
-    <section class="w-full flex sm:space-x-4 pt-5 flex-col sm:flex-row space-y-4 sm:space-y-0">
-        <div class="w-full sm:w-1/2">
-            <div
-                class="w-full flex flex-col flex-auto p-4 shadow rounded-xl overflow-hidden space-y-2 cust-outline bg-card"
-            >
-                <ng-container *ngFor="let pick of topPicks">
-                    <div class="flex py-2 w-full items-center scale-75 sm:scale-100 space-x-6">
+        <div class="flex flex-col mt-2 divide-y">
+            <ng-container *ngFor="let job of postedJobs; trackBy: trackByFn">
+                <div class="flex flex-row items-center justify-between py-4 px-0.5">
+                    <div class="flex flex-col">
+                        <div class="text-lg font-medium py-2">{{ job.title }}</div>
                         <div
-                            [routerLink]="['../candidate']"
-                            class="flex w-full items-center cursor-pointer"
+                            class="flex flex-col sm:flex-row sm:items-center -ml-0.5 mt-2 sm:mt-1 space-y-1 sm:space-y-0 space-x-2 sm:space-x-10"
                         >
-                            <img
-                                class="w-12 h-12 mr-2"
-                                src="assets/images/blank-person.svg"
-                                v
-                                alt=""
-                            />
-                            <div class="flex flex-col">
-                                <div class="font-medium">{{ pick.name }}</div>
-                                <div class="text-md cust-font-color">{{ pick.place }}</div>
+                            <div class="flex items-center">
+                                <mat-icon
+                                    class="icon-size-5 text-hint"
+                                    [svgIcon]="'mat_solid:calendar_today'"
+                                ></mat-icon>
+                                <div class="ml-1 text-md text-secondary">
+                                    {{ job.date }}
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <mat-icon
+                                    class="icon-size-5 text-hint"
+                                    [svgIcon]="'mat_outline:incomplete_circle'"
+                                ></mat-icon>
+                                <div class="ml-1 text-md text-secondary">{{ job.percent }}%</div>
+                            </div>
+                            <div class="flex items-center">
+                                <mat-icon
+                                    class="icon-size-5 text-hint"
+                                    [svgIcon]="'mat_solid:people_alt'"
+                                ></mat-icon>
+                                <div class="ml-1 text-md text-secondary">
+                                    {{ job.numberOfApplications }}+
+                                </div>
                             </div>
                         </div>
-
-                        <div class="w-full flex flex-col items-end">
-                            <div class="text-md font-medium">{{ pick.rating }}%</div>
-                            <mat-progress-bar
-                                mode="determinate"
-                                [value]="pick.rating"
-                            ></mat-progress-bar>
-                        </div>
                     </div>
-                </ng-container>
-            </div>
-        </div>
 
-        <div class="w-full sm:w-1/2">
-            <app-candidate-list></app-candidate-list>
+                    <button
+                        [routerLink]="['./job-id']"
+                        mat-icon-button
+                        class="hover:bg-slate-200 rounded-full w-8 h-8 flex justify-center items-center"
+                    >
+                        <mat-icon [svgIcon]="'heroicons_solid:chevron-right'"></mat-icon>
+                    </button>
+                </div>
+            </ng-container>
         </div>
-    </section>
+    </div>
 </section>
