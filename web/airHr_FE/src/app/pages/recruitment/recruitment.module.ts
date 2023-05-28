@@ -16,8 +16,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import {MatStepperModule} from '@angular/material/stepper';
-
+import { MatStepperModule } from '@angular/material/stepper';
 
 import { NgxMatTimepickerModule } from 'ngx-mat-timepicker';
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -43,9 +42,10 @@ import {
     MAT_RIPPLE_GLOBAL_OPTIONS,
     RippleGlobalOptions,
 } from '@angular/material/core';
+import { JobProgressComponent } from './onboarding/job-progress/job-progress.component';
 
 const globalRippleConfig: RippleGlobalOptions = {
-    disabled: true,
+    disabled: false,
 };
 
 @NgModule({
@@ -60,6 +60,7 @@ const globalRippleConfig: RippleGlobalOptions = {
         CandidateListComponent,
         CandidateDetailsComponent,
         PdfViewerComponent,
+        JobProgressComponent,
     ],
     imports: [
         CommonModule,

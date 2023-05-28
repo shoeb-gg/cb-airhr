@@ -9,14 +9,21 @@
                     class="icon-size-5 text-secondary"
                     [svgIcon]="'heroicons_solid:chevron-right'"
                 ></mat-icon>
-                <a [routerLink]="['../onboarding']" class="ml-1 text-primary-500">Onboarding</a>
+                <a [routerLink]="['../../']" class="ml-1 text-primary-500">Onboarding</a>
             </div>
             <div class="flex items-center ml-1 whitespace-nowrap">
                 <mat-icon
                     class="icon-size-5 text-secondary"
                     [svgIcon]="'heroicons_solid:chevron-right'"
                 ></mat-icon>
-                <span class="ml-1">Candidate</span>
+                <a [routerLink]="['../']" class="ml-1 text-primary-500">[Job Title]</a>
+            </div>
+            <div class="flex items-center ml-1 whitespace-nowrap">
+                <mat-icon
+                    class="icon-size-5 text-secondary"
+                    [svgIcon]="'heroicons_solid:chevron-right'"
+                ></mat-icon>
+                <span class="ml-1">[Candidate Name]</span>
             </div>
         </div>
 
@@ -24,10 +31,7 @@
             class="flex flex-col flex-auto p-4 mt-5 shadow rounded-xl overflow-hidden space-y-2 cust-outline bg-card"
         >
             <div class="flex py-2 w-full items-center">
-                <div
-                    [routerLink]="['../candidate']"
-                    class="flex w-full items-center cursor-pointer"
-                >
+                <div class="flex w-full items-center cursor-pointer">
                     <img class="w-12 h-12 mr-2" src="assets/images/blank-person.svg" v alt="" />
                     <div class="flex flex-col">
                         <div class="font-semibold text-xl">Shakib Al-Hasan</div>

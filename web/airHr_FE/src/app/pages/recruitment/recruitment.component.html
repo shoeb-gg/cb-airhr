@@ -50,54 +50,6 @@
                 ></app-basic-card>
             </div>
         </div>
-
-        <!-- <span class="w-full flex space-x-2"> </span> -->
-
-        <span class="w-full flex flex-col">
-            <div class="w-full text-xl font-semibold py-2">Your Jobs</div>
-
-            <div class="p-2 space-y-1 cust-outline rounded-lg bg-card">
-                <ng-container *ngFor="let job of postedJobs">
-                    <div
-                        class="flex justify-between items-center cursor-pointer cust-bg px-2 rounded-lg cust-bg-hover"
-                    >
-                        <div class="text-md sm:text-lg font-medium w-50 sm:w-72">
-                            {{ job.title }}
-                        </div>
-
-                        <div class="text-xs sm:text-sm cust-font">{{ job.date }}</div>
-
-                        <div class="text-md sm:text-lg font-semibold">{{ job.percent }}%</div>
-
-                        <div class="flex items-center w-0 sm:w-auto overflow-hidden sm:scale-75">
-                            <div class="flex flex-0 items-center -space-x-1.5">
-                                <img
-                                    class="flex-0 w-10 h-10 rounded-full object-cover"
-                                    src="assets/images/avatars/female-18.jpg"
-                                />
-                                <img
-                                    class="flex-0 w-10 h-10 rounded-full object-cover"
-                                    src="assets/images/avatars/female-11.jpg"
-                                />
-                                <img
-                                    class="flex-0 w-10 h-10 rounded-full object-cover"
-                                    src="assets/images/avatars/male-09.jpg"
-                                />
-                                <img
-                                    class="flex-0 w-10 h-10 rounded-full object-cover"
-                                    src="assets/images/avatars/male-16.jpg"
-                                />
-                                <div
-                                    class="flex-0 w-10 h-10 rounded-full object-cover bg-blue-600 flex justify-center items-center text-white text-sm pl-1"
-                                >
-                                    120+
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </ng-container>
-            </div>
-        </span>
     </div>
 
     <!-- <div class="w-2/5">

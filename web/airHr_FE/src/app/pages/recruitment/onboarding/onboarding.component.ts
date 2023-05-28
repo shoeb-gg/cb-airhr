@@ -6,21 +6,60 @@ import { Component } from '@angular/core';
     styleUrls: ['./onboarding.component.scss'],
 })
 export class OnboardingComponent {
-    public topPicks: any[] = [
+    public postedJobs: any[] = [
         {
-            name: 'Shakib Al-Hasan',
-            place: 'Bangladesh',
-            rating: '95',
+            title: 'Hiring Product Designer',
+            date: new Date().toLocaleDateString('en-us', {
+                day: 'numeric',
+                month: 'short',
+                year: 'numeric',
+            }),
+            percent: 88,
+            numberOfApplications: 120,
         },
         {
-            name: 'Mattie Blooman',
-            place: 'Bangladesh',
-            rating: '70',
+            title: 'Full Stack Developer',
+            date: new Date().toLocaleDateString('en-us', {
+                day: 'numeric',
+                month: 'short',
+                year: 'numeric',
+            }),
+            percent: 88,
+            numberOfApplications: 120,
         },
         {
-            name: 'Peter Steele',
-            place: 'United States',
-            rating: '80',
+            title: 'Human Resource Management',
+            date: new Date().toLocaleDateString('en-us', {
+                day: 'numeric',
+                month: 'short',
+                year: 'numeric',
+            }),
+            percent: 88,
+            numberOfApplications: 120,
+        },
+        {
+            title: 'Senior Wordpress Developer',
+            date: new Date().toLocaleDateString('en-us', {
+                day: 'numeric',
+                month: 'short',
+                year: 'numeric',
+            }),
+            percent: 88,
+            numberOfApplications: 120,
+        },
+        {
+            title: 'SQA Engineer',
+            date: new Date().toLocaleDateString('en-us', {
+                day: 'numeric',
+                month: 'short',
+                year: 'numeric',
+            }),
+            percent: 88,
+            numberOfApplications: 120,
         },
     ];
+
+    trackByFn(index: number, item: any): any {
+        return item.id || index;
+    }
 }
