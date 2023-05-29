@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import {
     PageSettingsModel,
@@ -19,7 +19,7 @@ import { ToolbarService } from '@syncfusion/ej2-angular-treegrid';
     providers: [PageService, SortService, FilterService, ToolbarService],
 })
 export class CandidateListComponent {
-    constructor(private router: Router) {}
+    constructor(private router: Router, private route: ActivatedRoute) {}
 
     public pageSettings: PageSettingsModel = { pageSize: 10 };
     customAttributes = { class: 'customcss' };
@@ -322,12 +322,12 @@ export class CandidateListComponent {
         this.selectedCandidate = event.data.name;
 
         if (event.target.getAttribute('aria-colindex') == 2) {
-            this.router.navigateByUrl('employee/details');
+            this.router.navigate(['./candidate'], { relativeTo: this.route });
         } else if (
             event.target.parentNode.parentNode.getAttribute('aria-colindex') ==
             2
         ) {
-            this.router.navigateByUrl('employee/details');
+            this.router.navigate(['candidate'], { relativeTo: this.route });
         }
     }
 
