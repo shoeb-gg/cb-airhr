@@ -4,26 +4,64 @@
     <ejs-treegrid
         [treeColumnIndex]="1"
         [dataSource]="candidatesList"
+        [treeColumnIndex]="1"
+        [allowSorting]="true"
         [allowFiltering]="true"
         [allowPaging]="true"
         [pageSettings]="pageSettings"
+        (rowSelected)="rowSelected($event)"
+        [toolbar]="toolbar"
+        [gridLines]="'Vertical'"
+        (checkBoxChange)="checkBoxChanged($event)"
+        [selectionSettings]="selectionOptions"
     >
         <e-columns>
-            <e-column field="name" headerText="Name" textAlign="left" [width]="130"></e-column>
+            <e-column type="checkbox" width="25" [textAlign]="'Center'"></e-column>
             <e-column
-                field="contact"
-                headerText="Contact"
-                textAlign="right"
-                [width]="100"
+                [customAttributes]="customAttributes"
+                field="name"
+                headerText="Name"
+                textAlign="left"
+                [width]="180"
             ></e-column>
-            <e-column id="template" textAlign="center" headerText="Actions">
+            <e-column
+                field="jobTitle"
+                headerText="Job Title"
+                textAlign="center"
+                [width]="200"
+            ></e-column>
+            <e-column
+                field="experience"
+                headerText="Experience"
+                textAlign="center"
+                [width]="120"
+            ></e-column>
+            <e-column
+                field="applyDate"
+                headerText="Applied On"
+                textAlign="center"
+                [width]="140"
+            ></e-column>
+            <e-column field="status" headerText="Status" textAlign="center" [width]="80"></e-column>
+            <e-column id="template" textAlign="center" [width]="80" headerText="Actions">
                 <ng-template #template let-data>
-                    <button
+                    <!-- <button
                         class="bg-white text-black cust-btn-outline py-1 px-1.5 rounded-lg mr-1"
                     >
                         Analyse
                     </button>
-                    <button class="cust-bg-dark py-1 px-1.5 text-white rounded-lg">Remove</button>
+                    <button class="cust-bg-dark py-1 px-1.5 text-white rounded-lg">Remove</button> -->
+
+                    <button mat-button [matMenuTriggerFor]="menu" class="w-full text-center">
+                        <mat-icon
+                            class="icon-size-6 text-hint"
+                            [svgIcon]="'mat_solid:more_horiz'"
+                        ></mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>Analyse</button>
+                        <button mat-menu-item>Remove</button>
+                    </mat-menu>
                 </ng-template>
             </e-column>
         </e-columns>

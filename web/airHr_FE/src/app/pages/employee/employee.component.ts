@@ -6,7 +6,6 @@ import {
     SelectionSettingsModel,
     SortSettingsModel,
 } from '@syncfusion/ej2-angular-grids';
-
 import { ToolbarService } from '@syncfusion/ej2-angular-treegrid';
 
 import {

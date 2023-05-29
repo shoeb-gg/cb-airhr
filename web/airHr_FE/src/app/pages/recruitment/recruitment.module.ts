@@ -17,6 +17,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatStepperModule } from '@angular/material/stepper';
+import { MatMenuModule } from '@angular/material/menu';
+
 
 import { NgxMatTimepickerModule } from 'ngx-mat-timepicker';
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -45,7 +47,7 @@ import {
 import { JobProgressComponent } from './onboarding/job-progress/job-progress.component';
 
 const globalRippleConfig: RippleGlobalOptions = {
-    disabled: false,
+    disabled: true,
 };
 
 @NgModule({
@@ -82,6 +84,7 @@ const globalRippleConfig: RippleGlobalOptions = {
         PdfViewerModule,
         TreeGridModule,
         MatStepperModule,
+        MatMenuModule,
     ],
     providers: [
         {
