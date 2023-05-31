@@ -11,17 +11,22 @@
     </div>
 </div>
 
-<section class="w-full flex flex-col py-1 mt-2">
+<section class="w-full flex flex-col items-center py-1 mt-2">
     <div
-        class="sm:col-span-2 md:col-span-4 lg:col-span-2 flex flex-col flex-auto px-2 py-4 sm:p-6 bg-card shadow rounded-2xl overflow-hidden"
+        class="sm:col-span-2 md:col-span-4 lg:col-span-2 flex flex-col flex-auto px-2 py-4 sm:p-6 bg-card shadow rounded-2xl overflow-hidden w-full md:w-2/3"
     >
         <div class="flex flex-col sm:flex-row items-start justify-between">
-            <div class="text-lg font-medium tracking-tight leading-6 truncate">Posted Jobs</div>
+            <div class="pl-5 text-lg font-medium tracking-tight leading-6 truncate">
+                Posted Jobs
+            </div>
         </div>
 
         <div class="flex flex-col mt-2 divide-y">
             <ng-container *ngFor="let job of postedJobs; trackBy: trackByFn">
-                <div class="flex flex-row items-center justify-between py-4 px-0.5">
+                <div
+                    [routerLink]="['./job-id']"
+                    class="flex flex-row items-center justify-between px-5 py-4 rounded-xl cursor-pointer hover:bg-slate-100"
+                >
                     <div class="flex flex-col">
                         <div class="text-lg font-medium py-2">{{ job.title }}</div>
                         <div
@@ -56,9 +61,8 @@
                     </div>
 
                     <button
-                        [routerLink]="['./job-id']"
                         mat-icon-button
-                        class="hover:bg-slate-200 rounded-full w-8 h-8 flex justify-center items-center"
+                        class="rounded-full w-8 h-8 flex justify-center items-center"
                     >
                         <mat-icon [svgIcon]="'heroicons_solid:chevron-right'"></mat-icon>
                     </button>
