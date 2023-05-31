@@ -18,50 +18,69 @@
             <a class="ml-1">[Job Title]</a>
         </div>
     </div>
+</div>
 
-    <section class="w-full flex flex-col py-1 mt-2">
-        <div class="text-4xl font-semibold">Check out Top Picks</div>
+<div class="rounded-lg cust-bg mt-4 py-0.5 px-0.5 bg-default">
+    <mat-tab-group mat-stretch-tabs="false" [animationDuration]="'0'">
+        preserveContent="true" [selectedIndex]="tabSelection"
+        (selectedTabChange)="setTabIndex($event)" >
+        <mat-tab>
+            <ng-template mat-tab-label> Top Picks </ng-template>
 
-        <div class="text-md font-medium cust-font-color">
-            Our predictive ai generated these top picks for you based on your tonality and
-            preferences.
-        </div>
+            <ng-template matTabContent>
+                <section class="w-full flex flex-col py-1 mt-2">
+                    <div class="text-4xl font-semibold pl-1">Check out Top Picks</div>
 
-        <section class="w-full pt-5 space-y-4">
-            <div class="w-full">
-                <div
-                    class="w-full flex flex-col flex-auto p-4 shadow rounded-xl overflow-hidden space-y-2 cust-outline bg-card"
-                >
-                    <ng-container *ngFor="let pick of topPicks">
-                        <div class="flex py-2 w-full items-center scale-75 sm:scale-100 space-x-6">
-                            <div class="flex w-full items-center cursor-pointer">
-                                <img
-                                    class="w-12 h-12 mr-2"
-                                    src="assets/images/blank-person.svg"
-                                    v
-                                    alt=""
-                                />
-                                <div class="flex flex-col">
-                                    <div class="font-medium">{{ pick.name }}</div>
-                                    <div class="text-md cust-font-color">{{ pick.place }}</div>
-                                </div>
-                            </div>
+                    <div class="text-md font-medium cust-font-color pl-1">
+                        Our predictive ai generated these top picks for you based on your tonality
+                        and preferences.
+                    </div>
 
-                            <div class="w-full flex flex-col items-end">
-                                <div class="text-md font-medium">{{ pick.rating }}%</div>
-                                <mat-progress-bar
-                                    mode="determinate"
-                                    [value]="pick.rating"
-                                ></mat-progress-bar>
+                    <section class="w-full pt-5 space-y-4">
+                        <div class="w-full">
+                            <div
+                                class="w-full flex flex-col flex-auto p-4 shadow rounded-xl overflow-hidden space-y-2 cust-outline bg-card"
+                            >
+                                <ng-container *ngFor="let pick of topPicks">
+                                    <div
+                                        class="flex py-2 w-full items-center scale-75 sm:scale-100 px-5 rounded-lg space-x-6 cursor-pointer hover:bg-slate-100"
+                                    >
+                                        <div class="flex w-full items-center">
+                                            <img
+                                                class="w-12 h-12 mr-2"
+                                                src="assets/images/blank-person.svg"
+                                                v
+                                                alt=""
+                                            />
+                                            <div class="flex flex-col">
+                                                <div class="font-medium">{{ pick.name }}</div>
+                                                <div class="text-md cust-font-color">
+                                                    {{ pick.place }}
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="w-full flex flex-col items-end">
+                                            <div class="text-md font-medium">
+                                                {{ pick.rating }}%
+                                            </div>
+                                            <mat-progress-bar
+                                                mode="determinate"
+                                                [value]="pick.rating"
+                                            ></mat-progress-bar>
+                                        </div>
+                                    </div>
+                                </ng-container>
                             </div>
                         </div>
-                    </ng-container>
-                </div>
-            </div>
+                    </section>
+                </section>
+            </ng-template>
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label> List of Candidates </ng-template>
 
-            <div class="w-full">
-                <app-candidate-list></app-candidate-list>
-            </div>
-        </section>
-    </section>
+            <ng-template matTabContent> <app-candidate-list></app-candidate-list> </ng-template>
+        </mat-tab>
+    </mat-tab-group>
 </div>

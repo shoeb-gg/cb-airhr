@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
     styleUrls: ['./job-progress.component.scss'],
 })
 export class JobProgressComponent {
+    public tabSelection: number = 0;
+
     public topPicks: any[] = [
         {
             name: 'Shakib Al-Hasan',
@@ -23,4 +25,14 @@ export class JobProgressComponent {
             rating: '80',
         },
     ];
+
+    setSelectedTab(flag: boolean): void {
+        if (flag) {
+            this.tabSelection++;
+        }
+    }
+
+    setTabIndex(index: any) {
+        this.tabSelection = index.index;
+    }
 }
