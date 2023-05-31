@@ -19,10 +19,10 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatMenuModule } from '@angular/material/menu';
 
-
 import { NgxMatTimepickerModule } from 'ngx-mat-timepicker';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { PdfViewerModule } from '@syncfusion/ej2-angular-pdfviewer';
+import { MatButtonModule } from '@angular/material/button';
 
 import { SharedModule } from 'app/shared/shared.module';
 
@@ -85,6 +85,7 @@ const globalRippleConfig: RippleGlobalOptions = {
         TreeGridModule,
         MatStepperModule,
         MatMenuModule,
+        MatButtonModule,
     ],
     providers: [
         {

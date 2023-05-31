@@ -2,6 +2,8 @@
 /*  @ Import/write your custom styles here.
 /*  @ Styles from this file will override 'vendors.scss' and Fuse's base styles.
 /* ----------------------------------------------------------------------------------------------------- */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 @import "@syncfusion/ej2-base/styles/tailwind.css";
 @import "@syncfusion/ej2-buttons/styles/tailwind.css";
 @import "@syncfusion/ej2-dropdowns/styles/tailwind.css";
