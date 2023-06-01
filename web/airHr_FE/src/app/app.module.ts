@@ -15,7 +15,7 @@ import { appRoutes } from 'app/app.routing';
 import { HttpClientModule } from '@angular/common/http';
 
 const routerConfig: ExtraOptions = {
-    // preloadingStrategy: PreloadAllModules,
+    preloadingStrategy: PreloadAllModules,
     scrollPositionRestoration: 'enabled',
 };
 
